@@ -1,0 +1,153 @@
+---
+title: "Quick Draft Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+editor_options: 
+  chunk_output_type: console
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+
+library(flexdashboard)
+library(tidyverse)
+library(plotly)
+library(ggtext)
+library(shiny)
+
+```
+
+
+
+```{r global, include = FALSE}
+
+# load data
+df <- read_csv("ff2023_merged_data.csv") 
+
+vars <- c("Pick Number",   
+          # "DraftSheets Position Rank", 
+          "FantasyPros Rank", "FantasyPros Projected Points",
+          "DraftSheets Rank", "DraftSheets VAL", 
+          "ADP (2QB)")
+
+pos.list <- unique(df$Position)
+
+var.switch <- function(var){
+  switch(var,
+         "Pick Number" = "Pick",
+         "ADP (2QB)" = "ADP",
+         "DraftSheets VAL" = "val",
+         "DraftSheets Rank" = "val_rank",
+         # "DraftSheets Position Rank" = "pos_rank", 
+         "FantasyPros Rank" = "ECR", 
+         "FantasyPros Projected Points" = "FPTS"
+         )
+}
+
+```
+
+
+
+```{r reactive}
+
+# define reactive elements for shiny
+  # page 1:
+  x <- reactive(input$x)
+  y <- reactive(input$y)
+  positions <- reactive(input$positions)
+  facet <- reactive(input$facet)
+  
+  # page 2: which team lines to show
+  
+
+```
+
+
+## Sidebar {.sidebar data-width=160}
+<!-- #### **Person 1** -->
+```{r personInput}
+
+# sidebar is the UI elemennt that contains the inputs for reactive stuff
+
+# dropdown for the top individual team plot
+selectInput(inputId = "x",
+            label = "x-axis",
+            choices = vars,
+            selected = vars[1],
+            selectize = TRUE,
+            )
+
+# dropdown for the bottom individual team plot
+selectInput(inputId = "y",
+            label = "y-axis",
+            choices = vars,
+            selected = vars[2],
+            selectize = TRUE,
+            )
+
+# selection box to pick any combination of weeks
+selectInput(inputId = "positions",
+            label = "Position Filter",
+            choices = pos.list,
+            selected = pos.list,
+            multiple = TRUE,
+            selectize = FALSE,
+            )
+
+radioButtons(inputId = "facet",
+             label = "Separate panels for each team?",
+             choices = c("No", "Yes"),
+             selected = "No")
+
+
+```
+
+
+##
+```{r }
+
+x2 <- reactive(var.switch(x()))
+y2 <- reactive(var.switch(y()))
+
+fillCol(height = 1000, flex = 1, 
+  plotlyOutput("g1", height = "100%")
+)
+
+output$g1 <- renderPlotly({
+
+  g<- df %>%
+    filter(Position %in% positions()) %>%
+  ggplot(aes(.data[[x2()]], .data[[y2()]], color = Manager)) +
+    geom_point(aes(text = Player)) +
+    theme_bw(base_size = 16) +
+    theme(legend.title = element_blank()) +
+    labs(x = x(),
+         y = y())
+
+  if(all(c(x(), y()) %in% c("Pick Number",  
+          "FantasyPros Rank",
+          "DraftSheets Rank",
+          "ADP (2QB)"))){
+    g <- g +
+      geom_abline(aes(slope = 1, intercept = 0))
+  } else{
+    g <- g +
+      geom_smooth(color = "gray50", se = FALSE)
+      
+  }
+  
+  if(facet() == "Yes"){
+    g <- g + 
+      facet_wrap(vars(Manager), nrow = 2) + 
+      theme(legend.position = "none")
+  }
+
+  ggplotly(g)
+
+})
+
+
+
+```

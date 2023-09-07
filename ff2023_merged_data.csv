@@ -1,0 +1,145 @@
+Pick,Player,Position,Round,Manager,Team,ADP,val,val_rank,pos_rank,ECR,FPTS
+6,Justin Jefferson,WR,1,The Gay Tuckers,MIN,1.9,8.6,2,1,2,310
+11,Austin Ekeler,RB,2,The Gay Tuckers,LAC,8.9,7.4,9,2,12,297.4
+22,Garrett Wilson,WR,3,The Gay Tuckers,NYJ,18.1,4.2,25,10,20,237.7
+27,Joe Mixon,RB,4,The Gay Tuckers,CIN,36.4,3.4,32,9,38,233.1
+38,DK Metcalf,WR,5,The Gay Tuckers,SEA,45.6,3.4,34,14,40,223.3
+43,Kirk Cousins,QB,6,The Gay Tuckers,MIN,36.4,2.9,41,11,43,287.3
+54,Darren Waller,TE,7,The Gay Tuckers,NYG,71.9,2.5,48,4,68,179.5
+59,Aaron Rodgers,QB,8,The Gay Tuckers,NYJ,28.9,2.1,52,14,51,271.6
+70,Alvin Kamara,RB,9,The Gay Tuckers,LV,70.8,0,101,27,92,176.3
+75,Marquise Brown,WR,10,The Gay Tuckers,ARI,92,1.4,70,31,72,191
+86,James Cook,RB,11,The Gay Tuckers,BUF,84.4,0.2,89,23,89,179
+91,Jared Goff,QB,12,The Gay Tuckers,DET,52,1.7,65,17,56,268.1
+102,Courtland Sutton,WR,13,The Gay Tuckers,DEN,98.9,0.1,92,39,94,168.6
+107,Justin Tucker,K,14,The Gay Tuckers,BAL,131.1,NA,NA,NA,NA,128.9
+118,Jerick McKinnon,RB,15,The Gay Tuckers,NO,126,-3.5,182,39,132,118
+123,Darnell Mooney,WR,16,The Gay Tuckers,NE,117.7,-1.5,134,55,142,139.8
+134,Cowboys,D/ST,17,The Gay Tuckers,DAL,136.2,NA,NA,NA,NA,114.5
+139,Matt Gay,K,18,The Gay Tuckers,IND,NA,NA,NA,NA,NA,111.5
+3,Jalen Hurts,QB,1,Cool Cats,PHI,3.3,7.6,6,2,3,364.3
+14,Travis Kelce,TE,2,Cool Cats,KC,6.9,8.8,1,1,9,285.3
+19,Justin Fields,QB,3,Cool Cats,CHI,13.3,4.6,19,6,13,317.6
+30,Chris Olave,WR,4,Cool Cats,NO,30.1,3.7,29,12,27,228.9
+35,Rhamondre Stevenson,RB,5,Cool Cats,NE,38.3,2.8,45,11,37,231.5
+46,DeAndre Hopkins,WR,6,Cool Cats,TEN,67.7,2.1,53,22,52,201.3
+51,Chris Godwin,WR,7,Cool Cats,TB,59,2.4,49,21,54,206.4
+62,James Conner,RB,8,Cool Cats,NE,61.5,1.7,63,14,81,203.3
+67,Jonathan Taylor,RB,9,Cool Cats,IND,31.2,-0.3,107,29,99,170.5
+78,Cam Akers,RB,10,Cool Cats,LAR,68.1,0,103,28,85,174.7
+83,Jerry Jeudy,WR,11,Cool Cats,DEN,85.3,1.1,76,34,80,187.5
+94,Dalvin Cook,RB,12,Cool Cats,DAL,73.3,-1.2,127,32,104,155.2
+99,Skyy Moore,WR,13,Cool Cats,KC,129.3,-1,120,48,111,148.9
+110,JuJu Smith-Schuster,WR,14,Cool Cats,NE,113.1,0.3,88,38,106,171.1
+115,Kyler Murray,QB,15,Cool Cats,ARI,70.1,-2.5,164,30,130,199
+126,Dallas Goedert,TE,16,Cool Cats,DAL,80.6,1.4,69,6,90,161.9
+131,Ravens,D/ST,17,Cool Cats,BAL,147.8,NA,NA,NA,NA,101.9
+142,Jason Myers,K,18,Cool Cats,SEA,166.4,NA,NA,NA,NA,120.8
+2,Josh Allen,QB,1,One Giant Leap,BUF,2.7,7.5,8,3,4,365.5
+15,Saquon Barkley,RB,2,One Giant Leap,NYG,18.4,4.9,18,4,19,256.3
+18,CeeDee Lamb,WR,3,One Giant Leap,DAL,21.5,6.7,11,5,15,277.1
+31,Tee Higgins,WR,4,One Giant Leap,CIN,34,3.4,33,13,33,223.8
+34,Travis Etienne Jr.,RB,5,One Giant Leap,NE,35.4,1.9,58,13,49,207.7
+47,Calvin Ridley,WR,6,One Giant Leap,LV,44.5,3,38,17,39,218.3
+50,Christian Watson,WR,7,One Giant Leap,GB,95.4,2.7,47,20,58,211.3
+63,Breece Hall,RB,8,One Giant Leap,NYJ,58.5,0.8,79,20,64,188.3
+66,Deshaun Watson,QB,9,One Giant Leap,CLE,42.6,3.6,30,8,31,300.8
+79,Kyle Pitts,TE,10,One Giant Leap,PIT,68.9,1.4,71,7,93,160.7
+82,David Montgomery,RB,11,One Giant Leap,DET,76.8,0.1,90,24,98,178.4
+95,Jahan Dotson,WR,12,One Giant Leap,WSH,113.2,0.7,81,35,75,178.2
+98,Jaxon Smith-Njigba,WR,13,One Giant Leap,JAX,104.1,-0.7,111,46,97,155
+111,Brian Robinson Jr.,RB,14,One Giant Leap,WSH,98.4,-2,150,37,119,141.9
+114,Jordan Love,QB,15,One Giant Leap,GB,113.4,0,102,22,83,243.9
+127,DJ Chark Jr.,WR,16,One Giant Leap,CAR,NA,-1.7,144,58,158,136.4
+130,Evan McPherson,K,17,One Giant Leap,CIN,142.6,NA,NA,NA,NA,123.6
+143,Steelers,D/ST,18,One Giant Leap,PIT,156.2,NA,NA,NA,NA,108.5
+5,Joe Burrow,QB,1,The Cincinnati Fantasy Team,CIN,6.7,5.8,15,5,11,336.7
+12,Davante Adams,WR,2,The Cincinnati Fantasy Team,LV,24.8,6.1,13,7,18,268.2
+21,Derrick Henry,RB,3,The Cincinnati Fantasy Team,TEN,20.2,4.6,21,5,29,249.8
+28,Jaylen Waddle,WR,4,The Cincinnati Fantasy Team,MIA,33.7,4.1,27,11,26,236.4
+37,Jahmyr Gibbs,RB,5,The Cincinnati Fantasy Team,DET,45.7,1.6,67,15,46,202
+44,Aaron Jones,RB,6,The Cincinnati Fantasy Team,NE,41.3,3.2,36,10,48,226.8
+53,Tua Tagovailoa,QB,7,The Cincinnati Fantasy Team,MIA,32.5,1.8,61,16,35,270.8
+60,DJ Moore,WR,8,The Cincinnati Fantasy Team,CHI,60.1,2.1,54,23,53,200.9
+69,George Kittle,TE,9,The Cincinnati Fantasy Team,SF,61.1,2.2,50,5,87,175.1
+76,Christian Kirk,WR,10,The Cincinnati Fantasy Team,JAX,86.6,1.9,59,27,66,199.1
+85,Brandin Cooks,WR,11,The Cincinnati Fantasy Team,DAL,95.7,0.3,87,37,96,170.8
+92,D'Andre Swift,RB,12,The Cincinnati Fantasy Team,PHI,52.4,-0.8,116,30,100,161.7
+101,Michael Thomas,WR,13,The Cincinnati Fantasy Team,NO,124.1,0,99,42,108,167.8
+108,Jamaal Williams,RB,14,The Cincinnati Fantasy Team,NO,98.7,-2.5,167,38,133,135.9
+117,Treylon Burks,WR,15,The Cincinnati Fantasy Team,TEN,106.5,-0.3,106,43,103,161.3
+124,Rondale Moore,WR,16,The Cincinnati Fantasy Team,DAL,NA,-1.2,125,52,144,146.8
+133,Jake Elliott,K,17,The Cincinnati Fantasy Team,PHI,149.4,NA,NA,NA,NA,122.5
+140,Bills,D/ST,18,The Cincinnati Fantasy Team,BUF,131.7,NA,NA,NA,NA,105
+4,Christian McCaffrey,RB,1,Moist Owlets,SF,5.1,7.6,7,1,6,301.7
+13,Stefon Diggs,WR,2,Moist Owlets,BUF,17,6.2,12,6,10,268.8
+20,Bijan Robinson,RB,3,Moist Owlets,ATL,15.8,4.4,22,6,21,247.6
+29,Trevor Lawrence,QB,4,Moist Owlets,JAX,19.2,2.9,42,12,22,288.1
+36,Mark Andrews,TE,5,Moist Owlets,BAL,31.9,3.9,28,2,42,204.3
+45,Amari Cooper,WR,6,Moist Owlets,ARI,42.9,2.8,43,18,44,214.6
+52,Daniel Jones,QB,7,Moist Owlets,NE,42.9,3,39,9,32,288.7
+61,Drake London,WR,8,Moist Owlets,ATL,86.7,1.6,66,30,55,194.6
+68,Dameon Pierce,RB,9,Moist Owlets,HOU,53.1,1.2,75,17,67,194.4
+77,Brandon Aiyuk,WR,10,Moist Owlets,SF,89.4,1.2,74,33,61,186.4
+84,J.K. Dobbins,RB,11,Moist Owlets,BAL,65.2,0.3,85,22,79,181.6
+93,Brock Purdy,QB,12,Moist Owlets,SF,105.6,0,97,21,84,241.4
+100,Raheem Mostert,RB,13,Moist Owlets,MIA,113.9,-1.6,136,35,135,160.3
+109,Gabe Davis,WR,14,Moist Owlets,BUF,108.7,0.1,93,40,95,168.1
+116,Zach Charbonnet,RB,15,Moist Owlets,NE,133.8,-3.7,183,40,125,113.5
+125,Kenneth Gainwell,RB,16,Moist Owlets,NE,128.1,-4.3,205,47,149,103.4
+129,Eagles,D/ST,17,Moist Owlets,PHI,138.8,NA,NA,NA,NA,114.5
+144,Riley Patterson,K,18,Moist Owlets,DET,NA,NA,NA,NA,NA,118.2
+8,Lamar Jackson,QB,1,Buffalo Brown AshPandas,BAL,8.9,5.9,14,4,8,337.9
+9,Tyreek Hill,WR,2,Buffalo Brown AshPandas,MIA,8.3,7.7,5,3,7,296.5
+24,Cooper Kupp,WR,3,Buffalo Brown AshPandas,LAR,14.5,6.9,10,4,24,271.2
+25,A.J. Brown,WR,4,Buffalo Brown AshPandas,PHI,23.2,4.6,20,9,17,243
+40,Najee Harris,RB,5,Buffalo Brown AshPandas,PIT,31.8,2.1,51,12,47,210.9
+41,Kenneth Walker III,RB,6,Buffalo Brown AshPandas,NE,43.9,1.1,77,18,69,193.2
+48,Anthony Richardson,QB,6,Buffalo Brown AshPandas,IND,55.1,1.3,72,18,45,262.2
+72,Javonte Williams,RB,9,Buffalo Brown AshPandas,DEN,54.1,0,98,26,91,175.9
+73,Miles Sanders,RB,10,Buffalo Brown AshPandas,CAR,58,0.6,83,21,74,183.8
+81,Michael Pittman Jr.,WR,11,Buffalo Brown AshPandas,PIT,69.4,1.2,73,32,71,188.1
+88,Khalil Herbert,RB,11,Buffalo Brown AshPandas,CHI,103.2,-1.5,135,34,112,150.6
+89,George Pickens,WR,12,Buffalo Brown AshPandas,PIT,102.5,0.4,84,36,82,174.4
+104,AJ Dillon,RB,13,Buffalo Brown AshPandas,GB,91.1,-1.3,129,33,118,150.7
+105,Zay Flowers,WR,14,Buffalo Brown AshPandas,BAL,141.5,-0.7,110,45,101,154.8
+120,Elijah Mitchell,RB,15,Buffalo Brown AshPandas,SF,119.5,-4.1,198,45,151,108.1
+121,Dalton Kincaid,TE,16,Buffalo Brown AshPandas,DAL,146.7,-1,119,17,150,120.1
+136,Harrison Butker,K,17,Buffalo Brown AshPandas,KC,143.2,NA,NA,NA,NA,128.7
+137,Saints,D/ST,18,Buffalo Brown AshPandas,NO,139.1,NA,NA,NA,NA,106.3
+7,Ja'Marr Chase,WR,1,Gentle Minyans,CIN,8.4,8,3,2,5,300.5
+10,Justin Herbert,QB,2,Gentle Minyans,LAC,11.5,4.1,26,7,14,309.4
+23,Nick Chubb,RB,3,Gentle Minyans,CLE,14.2,4.4,23,7,25,247.1
+26,Josh Jacobs,RB,4,Gentle Minyans,LV,26,4.3,24,8,28,246.7
+39,T.J. Hockenson,TE,5,Gentle Minyans,MIN,49.3,3.6,31,3,65,198.6
+42,Deebo Samuel,WR,6,Gentle Minyans,SF,41.6,2.8,44,19,50,214
+55,Dak Prescott,QB,7,Gentle Minyans,DAL,26.7,2.9,40,10,36,290.5
+58,Diontae Johnson,WR,8,Gentle Minyans,PIT,72.6,1.7,64,29,57,196.5
+71,Mike Evans,WR,9,Gentle Minyans,TB,74.1,2.1,55,24,70,200.9
+74,Terry McLaurin,WR,10,Gentle Minyans,WSH,76.7,2,57,26,60,198.6
+87,Isiah Pacheco,RB,11,Gentle Minyans,KC,82.6,0,95,25,105,176.3
+90,49ers,D/ST,12,Gentle Minyans,SF,124,NA,NA,NA,NA,108.2
+103,Derek Carr,QB,13,Gentle Minyans,CAR,62.9,0.3,86,19,76,247
+106,Jakobi Meyers,WR,14,Gentle Minyans,LV,129.9,-0.7,109,44,116,156
+119,Rashaad Penny,RB,15,Gentle Minyans,PHI,97.6,-3.8,189,42,147,112.8
+122,Pat Freiermuth,TE,16,Gentle Minyans,PIT,91.9,0.7,82,9,115,148.6
+135,Odell Beckham Jr.,WR,17,Gentle Minyans,BAL,152.1,-1.4,131,53,138,143.9
+138,Daniel Carlson,K,18,Gentle Minyans,CAR,147.1,NA,NA,NA,NA,125.2
+1,Patrick Mahomes II,QB,1,Baby Chargers,KC,1.5,7.9,4,1,1,368.4
+16,Tony Pollard,RB,2,Baby Chargers,LAR,23.8,4.9,17,3,23,256.3
+17,Amon-Ra St. Brown,WR,3,Baby Chargers,DET,23.3,5.3,16,8,16,256.4
+32,Keenan Allen,WR,4,Baby Chargers,LAC,43.1,3.2,37,16,34,220.5
+33,DeVonta Smith,WR,5,Baby Chargers,PHI,52.3,3.2,35,15,30,221.3
+49,Geno Smith,QB,7,Baby Chargers,NO,66,2.7,46,13,41,286.1
+56,Mike Williams,WR,7,Baby Chargers,LAC,76.6,2,56,25,63,201.1
+57,Tyler Lockett,WR,8,Baby Chargers,SEA,83.8,1.8,62,28,59,197.2
+64,Alexander Mattison,RB,8,Baby Chargers,MIN,62.4,1.5,68,16,73,201.1
+65,Rachaad White,RB,9,Baby Chargers,TB,77,1.1,78,19,78,196.5
+80,Russell Wilson,QB,10,Baby Chargers,DEN,50,1.9,60,15,62,271.4
+96,Jordan Addison,WR,12,Baby Chargers,MIN,108,0,94,41,88,166.4
+97,Antonio Gibson,RB,13,Baby Chargers,WSH,93.6,-1.2,126,31,109,155.6
+112,Quentin Johnston,WR,14,Baby Chargers,LAC,153.6,-2.1,153,62,120,130.3
+113,Samaje Perine,RB,15,Baby Chargers,NE,133.4,-1.8,148,36,123,146.2
+128,Dalton Schultz,TE,16,Baby Chargers,DAL,117.5,0,96,10,141,136.9
+132,Cameron Dicker,K,17,Baby Chargers,LAC,NA,NA,NA,NA,NA,126.2
+141,Commanders,D/ST,18,Baby Chargers,WSH,153.2,NA,NA,NA,NA,105.1

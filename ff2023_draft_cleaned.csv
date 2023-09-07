@@ -1,0 +1,145 @@
+Pick,Player,Position,Round,Manager,Team
+6,Justin Jefferson,WR,1,The Gay Tuckers,MIN
+11,Austin Ekeler,RB,2,The Gay Tuckers,LAC
+22,Garrett Wilson,WR,3,The Gay Tuckers,NYJ
+27,Joe Mixon,RB,4,The Gay Tuckers,CIN
+38,DK Metcalf,WR,5,The Gay Tuckers,SEA
+43,Kirk Cousins,QB,6,The Gay Tuckers,MIN
+54,Darren Waller,TE,7,The Gay Tuckers,NYG
+59,Aaron Rodgers,QB,8,The Gay Tuckers,NYJ
+70,Alvin Kamara,RB,9,The Gay Tuckers,LV
+75,Marquise Brown,WR,10,The Gay Tuckers,ARI
+86,James Cook,RB,11,The Gay Tuckers,BUF
+91,Jared Goff,QB,12,The Gay Tuckers,DET
+102,Courtland Sutton,WR,13,The Gay Tuckers,DEN
+107,Justin Tucker,K,14,The Gay Tuckers,BAL
+118,Jerick McKinnon,RB,15,The Gay Tuckers,NO
+123,Darnell Mooney,WR,16,The Gay Tuckers,NE
+134,Cowboys D/ST,D/ST,17,The Gay Tuckers,DAL
+139,Matt Gay,K,18,The Gay Tuckers,IND
+3,Jalen Hurts,QB,1,Cool Cats,PHI
+14,Travis Kelce,TE,2,Cool Cats,KC
+19,Justin Fields,QB,3,Cool Cats,CHI
+30,Chris Olave,WR,4,Cool Cats,NO
+35,Rhamondre Stevenson,RB,5,Cool Cats,NE
+46,DeAndre Hopkins,WR,6,Cool Cats,TEN
+51,Chris Godwin,WR,7,Cool Cats,TB
+62,James Conner,RB,8,Cool Cats,NE
+67,Jonathan Taylor,RB,9,Cool Cats,IND
+78,Cam Akers,RB,10,Cool Cats,LAR
+83,Jerry Jeudy,WR,11,Cool Cats,DEN
+94,Dalvin Cook,RB,12,Cool Cats,DAL
+99,Skyy Moore,WR,13,Cool Cats,KC
+110,JuJu Smith-Schuster,WR,14,Cool Cats,NE
+115,Kyler Murray,QB,15,Cool Cats,ARI
+126,Dallas Goedert,TE,16,Cool Cats,DAL
+131,Ravens D/ST,D/ST,17,Cool Cats,BAL
+142,Jason Myers,K,18,Cool Cats,SEA
+2,Josh Allen,QB,1,One Giant Leap,BUF
+15,Saquon Barkley,RB,2,One Giant Leap,NYG
+18,CeeDee Lamb,WR,3,One Giant Leap,DAL
+31,Tee Higgins,WR,4,One Giant Leap,CIN
+34,Travis Etienne Jr.,RB,5,One Giant Leap,NE
+47,Calvin Ridley,WR,6,One Giant Leap,LV
+50,Christian Watson,WR,7,One Giant Leap,GB
+63,Breece Hall,RB,8,One Giant Leap,NYJ
+66,Deshaun Watson,QB,9,One Giant Leap,CLE
+79,Kyle Pitts,TE,10,One Giant Leap,PIT
+82,David Montgomery,RB,11,One Giant Leap,DET
+95,Jahan Dotson,WR,12,One Giant Leap,WSH
+98,Jaxon Smith-Njigba,WR,13,One Giant Leap,JAX
+111,Brian Robinson Jr.,RB,14,One Giant Leap,WSH
+114,Jordan Love,QB,15,One Giant Leap,GB
+127,DJ Chark Jr.,WR,16,One Giant Leap,CAR
+130,Evan McPherson,K,17,One Giant Leap,CIN
+143,Steelers D/ST,D/ST,18,One Giant Leap,PIT
+5,Joe Burrow,QB,1,The Cincinnati Fantasy Team,CIN
+12,Davante Adams,WR,2,The Cincinnati Fantasy Team,LV
+21,Derrick Henry,RB,3,The Cincinnati Fantasy Team,TEN
+28,Jaylen Waddle,WR,4,The Cincinnati Fantasy Team,MIA
+37,Jahmyr Gibbs,RB,5,The Cincinnati Fantasy Team,DET
+44,Aaron Jones,RB,6,The Cincinnati Fantasy Team,NE
+53,Tua Tagovailoa,QB,7,The Cincinnati Fantasy Team,MIA
+60,DJ Moore,WR,8,The Cincinnati Fantasy Team,CHI
+69,George Kittle,TE,9,The Cincinnati Fantasy Team,SF
+76,Christian Kirk,WR,10,The Cincinnati Fantasy Team,JAX
+85,Brandin Cooks,WR,11,The Cincinnati Fantasy Team,DAL
+92,D'Andre Swift,RB,12,The Cincinnati Fantasy Team,PHI
+101,Michael Thomas,WR,13,The Cincinnati Fantasy Team,NO
+108,Jamaal Williams,RB,14,The Cincinnati Fantasy Team,NO
+117,Treylon Burks,WR,15,The Cincinnati Fantasy Team,TEN
+124,Rondale Moore,WR,16,The Cincinnati Fantasy Team,DAL
+133,Jake Elliott,K,17,The Cincinnati Fantasy Team,PHI
+140,Bills D/ST,D/ST,18,The Cincinnati Fantasy Team,BUF
+4,Christian McCaffrey,RB,1,Moist Owlets,SF
+13,Stefon Diggs,WR,2,Moist Owlets,BUF
+20,Bijan Robinson,RB,3,Moist Owlets,ATL
+29,Trevor Lawrence,QB,4,Moist Owlets,JAX
+36,Mark Andrews,TE,5,Moist Owlets,BAL
+45,Amari Cooper,WR,6,Moist Owlets,ARI
+52,Daniel Jones,QB,7,Moist Owlets,NE
+61,Drake London,WR,8,Moist Owlets,ATL
+68,Dameon Pierce,RB,9,Moist Owlets,HOU
+77,Brandon Aiyuk,WR,10,Moist Owlets,SF
+84,J.K. Dobbins,RB,11,Moist Owlets,BAL
+93,Brock Purdy,QB,12,Moist Owlets,SF
+100,Raheem Mostert,RB,13,Moist Owlets,MIA
+109,Gabe Davis,WR,14,Moist Owlets,BUF
+116,Zach Charbonnet,RB,15,Moist Owlets,NE
+125,Kenneth Gainwell,RB,16,Moist Owlets,NE
+129,Eagles D/ST,D/ST,17,Moist Owlets,PHI
+144,Riley Patterson,K,18,Moist Owlets,DET
+8,Lamar Jackson,QB,1,Buffalo Brown AshPandas,BAL
+9,Tyreek Hill,WR,2,Buffalo Brown AshPandas,MIA
+24,Cooper Kupp,WR,3,Buffalo Brown AshPandas,LAR
+25,A.J. Brown,WR,4,Buffalo Brown AshPandas,PHI
+40,Najee Harris,RB,5,Buffalo Brown AshPandas,PIT
+41,Kenneth Walker III,RB,6,Buffalo Brown AshPandas,NE
+48,Anthony Richardson,QB,6,Buffalo Brown AshPandas,IND
+72,Javonte Williams,RB,9,Buffalo Brown AshPandas,DEN
+73,Miles Sanders,RB,10,Buffalo Brown AshPandas,CAR
+81,Michael Pittman Jr.,WR,11,Buffalo Brown AshPandas,PIT
+88,Khalil Herbert,RB,11,Buffalo Brown AshPandas,CHI
+89,George Pickens,WR,12,Buffalo Brown AshPandas,PIT
+104,AJ Dillon,RB,13,Buffalo Brown AshPandas,GB
+105,Zay Flowers,WR,14,Buffalo Brown AshPandas,BAL
+120,Elijah Mitchell,RB,15,Buffalo Brown AshPandas,SF
+121,Dalton Kincaid,TE,16,Buffalo Brown AshPandas,DAL
+136,Harrison Butker,K,17,Buffalo Brown AshPandas,KC
+137,Saints D/ST,D/ST,18,Buffalo Brown AshPandas,NO
+7,Ja'Marr Chase,WR,1,Gentle Minyans,CIN
+10,Justin Herbert,QB,2,Gentle Minyans,LAC
+23,Nick Chubb,RB,3,Gentle Minyans,CLE
+26,Josh Jacobs,RB,4,Gentle Minyans,LV
+39,T.J. Hockenson,TE,5,Gentle Minyans,MIN
+42,Deebo Samuel,WR,6,Gentle Minyans,SF
+55,Dak Prescott,QB,7,Gentle Minyans,DAL
+58,Diontae Johnson,WR,8,Gentle Minyans,PIT
+71,Mike Evans,WR,9,Gentle Minyans,TB
+74,Terry McLaurin,WR,10,Gentle Minyans,WSH
+87,Isiah Pacheco,RB,11,Gentle Minyans,KC
+90,49ers D/ST,D/ST,12,Gentle Minyans,SF
+103,Derek Carr,QB,13,Gentle Minyans,CAR
+106,Jakobi Meyers,WR,14,Gentle Minyans,LV
+119,Rashaad Penny,RB,15,Gentle Minyans,PHI
+122,Pat Freiermuth,TE,16,Gentle Minyans,PIT
+135,Odell Beckham Jr.,WR,17,Gentle Minyans,BAL
+138,Daniel Carlson,K,18,Gentle Minyans,CAR
+1,Patrick Mahomes,QB,1,Baby Chargers,KC
+16,Tony Pollard,RB,2,Baby Chargers,LAR
+17,Amon-Ra St. Brown,WR,3,Baby Chargers,DET
+32,Keenan Allen,WR,4,Baby Chargers,LAC
+33,DeVonta Smith,WR,5,Baby Chargers,PHI
+49,Geno Smith,QB,7,Baby Chargers,NO
+56,Mike Williams,WR,7,Baby Chargers,LAC
+57,Tyler Lockett,WR,8,Baby Chargers,SEA
+64,Alexander Mattison,RB,8,Baby Chargers,MIN
+65,Rachaad White,RB,9,Baby Chargers,TB
+80,Russell Wilson,QB,10,Baby Chargers,DEN
+96,Jordan Addison,WR,12,Baby Chargers,MIN
+97,Antonio Gibson,RB,13,Baby Chargers,WSH
+112,Quentin Johnston,WR,14,Baby Chargers,LAC
+113,Samaje Perine,RB,15,Baby Chargers,NE
+128,Dalton Schultz,TE,16,Baby Chargers,DAL
+132,Cameron Dicker,K,17,Baby Chargers,LAC
+141,Commanders D/ST,D/ST,18,Baby Chargers,WSH
