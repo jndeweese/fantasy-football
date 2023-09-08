@@ -32,7 +32,16 @@ vars <- c("Pick Number",
           "DraftSheets Rank", "DraftSheets VAL", 
           "ADP (2QB)")
 
-pos.list <- unique(df$Position)
+pos.list <- c("QB", "WR", "RB", "TE", "D/ST", "K")
+pos.list2 <- c("QB", "WR", "RB", "Flex", "TE", "D/ST", "K")
+
+starter.num <- data.frame(Position = pos.list2,
+                          num = c(2, 3, 2, 1, 1, 1, 1))
+
+colors7 <-  c("#CC79A7", "#56B4E9", "#009E73", "#F0E442", 
+              "#0072B2", "#D55E00", "#E69F00")
+pos.colors <- colors7
+names(pos.colors) <- pos.list2
 
 var.switch <- function(var){
   switch(var,
@@ -45,6 +54,32 @@ var.switch <- function(var){
          "FantasyPros Projected Points" = "FPTS"
          )
 }
+
+
+# processing for page 2
+# identifying starters and bench
+df2 <- df %>%
+  left_join(starter.num) %>%
+  # mutate(Position = factor(Position, levels = pos.list2 )) %>%
+  group_by(Manager, Position) %>%
+  arrange(Manager, Position, desc(FPTS)) %>%
+  mutate(starter = ifelse(FPTS >= FPTS[num], "Starter", "Bench"))
+
+df.flex <- df2 %>%
+  filter(starter == "Bench", Position %in% c("WR", "RB", "TE")) %>%
+  group_by(Manager) %>%
+  slice_max(FPTS, n = 1) %>%
+  mutate(Position2 = "Flex") %>%
+  select(Player, Position2)
+
+df3 <- df2 %>%
+  left_join(df.flex) %>%
+  mutate(Position2 = ifelse(is.na(Position2), Position, Position2),
+         Position = factor(Position, levels = pos.list2 ),
+         Position2 = factor(Position2, levels = pos.list2 ),
+         starter = ifelse(Position2 == "Flex", "Starter", starter)) %>%
+  ungroup() %>%
+  arrange(Manager, desc(starter), Position, desc(FPTS))
 
 ```
 
@@ -59,19 +94,22 @@ var.switch <- function(var){
   positions <- reactive(input$positions)
   facet <- reactive(input$facet)
   
-  # page 2: which team lines to show
+  # page 2:
+  criteria <- reactive(input$criteria)
+  startSelect <- reactive(input$startSelect)
+  positions2 <- reactive(input$positions2)
   
 
 ```
 
+# Draft Analysis
 
 ## Sidebar {.sidebar data-width=160}
 <!-- #### **Person 1** -->
-```{r personInput}
+```{r sidebar1}
 
 # sidebar is the UI elemennt that contains the inputs for reactive stuff
 
-# dropdown for the top individual team plot
 selectInput(inputId = "x",
             label = "x-axis",
             choices = vars,
@@ -79,7 +117,6 @@ selectInput(inputId = "x",
             selectize = TRUE,
             )
 
-# dropdown for the bottom individual team plot
 selectInput(inputId = "y",
             label = "y-axis",
             choices = vars,
@@ -87,13 +124,13 @@ selectInput(inputId = "y",
             selectize = TRUE,
             )
 
-# selection box to pick any combination of weeks
 selectInput(inputId = "positions",
             label = "Position Filter",
             choices = pos.list,
             selected = pos.list,
             multiple = TRUE,
             selectize = FALSE,
+            size = 6,
             )
 
 radioButtons(inputId = "facet",
@@ -117,7 +154,7 @@ fillCol(height = 1000, flex = 1,
 
 output$g1 <- renderPlotly({
 
-  g<- df %>%
+  g <- df %>%
     filter(Position %in% positions()) %>%
   ggplot(aes(.data[[x2()]], .data[[y2()]], color = Manager)) +
     geom_point(aes(text = Player)) +
@@ -151,3 +188,148 @@ output$g1 <- renderPlotly({
 
 
 ```
+
+# Team Projections and Value
+## Sidebar {.sidebar data-width=160}
+<!-- #### **Person 1** -->
+```{r sidebar2}
+
+# sidebar is the UI elemennt that contains the inputs for reactive stuff
+
+radioButtons(inputId = "criteria",
+             label = "Projections/VAL",
+             choices = c("FantasyPros Projected Points", "DraftSheets VAL"),
+             selected = "FantasyPros Projected Points")
+
+radioButtons(inputId = "startSelect",
+             label = "Starters/Bench",
+             choices = c("Starters", "Bench", "Both"),
+             selected = "Starters")
+
+selectInput(inputId = "positions2",
+            label = "Position Filter",
+            choices = pos.list2,
+            selected = pos.list2,
+            multiple = TRUE,
+            selectize = FALSE,
+            size = 7,
+            )
+
+```
+
+
+##
+```{r}
+# # for testing outside of running shiny  
+# dfpoints <- df3 %>%
+#   filter(starter == "Starter") %>%
+#   group_by(Manager) %>%
+#   summarise(total_points = sum(FPTS)) %>%
+#   arrange(desc(total_points))
+# 
+# df3 %>%
+#   left_join(dfpoints) %>%
+#   # drop_na(val) %>%
+#   filter(starter != "Bench") %>%
+#   mutate(Manager = fct_reorder(Manager, total_points),
+#          Position = fct_rev(Position2),
+#          Player = fct_reorder(Player, FPTS)) %>%
+#   ggplot(aes(Manager, FPTS, text = Player)) +
+#   geom_bar(aes(fill = Position, alpha = starter), stat = "identity") +
+#   geom_text(data = dfpoints %>% mutate(Player = ""),
+#             aes(y = total_points, label = round(total_points)), hjust = -.1) +
+#   scale_y_continuous(expand = expansion(mult = c(.05, .1))) + 
+#   scale_alpha_manual(values = c(.6, 1)) +
+#   coord_flip() +
+#   theme_bw()
+# 
+# ggplotly(tooltip = c("x", "y", "fill", "text"))
+
+```
+
+```{r}
+
+
+fillCol(height = 1000, flex = 1, 
+  plotlyOutput("g2", height = "100%")
+)
+
+output$g2 <- renderPlotly({
+  
+  if(startSelect() == "Starters"){
+    df3 <- df3 %>%
+      filter(starter == "Starter")
+  } else if(startSelect() == "Bench"){
+    df3 <- df3 %>%
+      filter(starter == "Bench")
+  }
+  
+  df3 <- df3 %>%
+    mutate(Position = fct_rev(Position2)) %>%
+    filter(Position %in% positions2())
+  
+  if(criteria() == "FantasyPros Projected Points"){
+    df_sort <- df3 %>%
+      group_by(Manager) %>%
+      summarise(total = sum(FPTS)) %>%
+      arrange(desc(total)) %>%
+      mutate(location = total + max(total)*.05,
+             label = round(total))
+  } else if(criteria() == "DraftSheets VAL"){
+    df_sort <- df3 %>%
+      group_by(Manager) %>%
+      summarise(total = sum(val, na.rm = TRUE),
+                location = sum(val[val>0], na.rm=TRUE)) %>%
+      arrange(desc(total)) %>%
+      mutate(location = location + max(.7, max(location) * .05),
+             label = paste0("Net =\n", round(total, 1)))
+  }
+  
+  criteria2 <- var.switch(criteria())
+  
+  g <- df3 %>%
+    left_join(df_sort) %>%
+    drop_na(.data[[criteria2]]) %>%
+    mutate(Manager = fct_reorder(Manager, total),
+           Player = fct_reorder(Player, .data[[criteria2]])) %>%
+    ggplot(aes(Manager, .data[[criteria2]], fill = Position, text = Player)) + 
+      geom_bar(aes(alpha = starter), stat = "identity") + 
+      geom_text(data = df_sort %>% mutate(Player = ""),
+                aes(y = location, label = label, fill = NULL)) +
+      geom_hline(yintercept = 0) + 
+      scale_y_continuous(expand = expansion(mult = c(.05, .1))) + 
+      scale_alpha_manual(values = 1) + 
+      scale_fill_manual(values = pos.colors) + 
+      coord_flip() + 
+      theme_bw() + 
+      labs(fill = NULL,
+           alpha = NULL)
+  
+  if(startSelect() == "Both"){
+    g <- g +
+      scale_alpha_manual(values = c(.6, 1))
+
+  }
+
+  ggplotly(g, tooltip = c("x", "y", "fill", "text"))
+
+})
+
+```
+
+
+
+# Data Sources
+
+FantasyPros superflex rankings (which is basically 2QB), downloaded 2023-09-06:[https://www.fantasypros.com/nfl/rankings/ppr-superflex-cheatsheets.php](https://www.fantasypros.com/nfl/rankings/ppr-superflex-cheatsheets.php)
+
+FantasyPros Projections, downloaded 2023-09-06: [https://www.fantasypros.com/nfl/projections/flex.php?week=draft&scoring=PPR&week=draft](https://www.fantasypros.com/nfl/projections/flex.php?week=draft&scoring=PPR&week=draft)
+
+DraftSheets, 2023-09-03 update: [https://old.reddit.com/r/fantasyfootball/comments/166bxuk/another_draft_sheet_option_update_8312023/](https://old.reddit.com/r/fantasyfootball/comments/166bxuk/another_draft_sheet_option_update_8312023/)
+
+More info on DraftSheets: [https://old.reddit.com/r/fantasyfootball/comments/15jexnu/another_draft_sheet_option/?ref=share&ref_source=link](https://old.reddit.com/r/fantasyfootball/comments/15jexnu/another_draft_sheet_option/?ref=share&ref_source=link)
+
+- basically VAL is just data pulled from FantasyPros and adjusted for a "baseline player" at each position
+
+ADPs, downloaded 2023-09-06: [https://fantasydata.com/nfl/2qb-adp](https://fantasydata.com/nfl/2qb-adp)
+
